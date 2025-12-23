@@ -330,8 +330,8 @@ namespace Unity.RenderStreaming.Editor
         private static bool IsAndroidInternetAccessCorrect() => PlayerSettings.Android.forceInternetPermission;
         private static void FixAndroidInternetAccess() => PlayerSettings.Android.forceInternetPermission = true;
 
-        const string kTemplatePath = "Packages/com.unity.renderstreaming/Editor/UXML/RenderStreamingWizard.uxml";
-        const string kStylePath = "Packages/com.unity.renderstreaming/Editor/Styles/RenderStreamingWizard.uss";
+        const string kTemplatePath = "Assets/SubModules/UnityRenderStreaming/com.unity.renderstreaming/Editor/UXML/RenderStreamingWizard.uxml";
+        const string kStylePath = "Assets/SubModules/UnityRenderStreaming/com.unity.renderstreaming/Editor/Styles/RenderStreamingWizard.uss";
 
         [MenuItem("Window/Render Streaming/Render Streaming Wizard", priority = 10000)]
         static void OpenWindow()
